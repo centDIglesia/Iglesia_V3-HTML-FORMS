@@ -1,0 +1,156 @@
+.menu {
+  margin-top: 2rem;
+}
+
+.menu__text {
+  text-align: center;
+  margin-bottom: 5rem;
+}
+
+.menu__subtitle {
+  color: var(--clr-slate400);
+  font-size: var(--size-base);
+}
+
+.menu_title {
+  color: var(--clr-orange);
+  font-size: var(--size-5xl);
+}
+
+.menu__products-flex {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 1.5em;
+  margin-bottom: 6em;
+}
+
+.menu__card {
+  display: flex;
+  flex-direction: column;
+  border-radius: 5px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 1.5em;
+  padding: 2em 1em;
+  background-color: rgba(255, 153, 0, 0.05);
+  transition: background-color 0.2s;
+}
+
+.menu__card:hover {
+  background-color: rgba(255, 153, 0, 0.192);
+}
+
+.card__image-container {
+  width: 300px;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card__image {
+  max-width: 55%;
+  height: 100%;
+  width: 100%;
+  transition: transform 0.3s;
+
+}
+.menu__card:hover .card__image {
+  transform: rotate(-6deg);
+}
+.card__name {
+  color: var(--clr-orange);
+}
+
+.card__price {
+  color: var(--clr-orange);
+  font-size: var(--size-xs);
+}
+.card__description {
+  color: var(--clr-slate600);
+  font-size: var(--size-xs);
+}
+.card__price::before {
+  content: "\20B1";
+}
+
+.card__btn {
+  margin-top: 1em;
+  font-size: 0.7em;
+  width: 18em;
+  
+}
+
+.category__buttons{
+  margin-bottom: 1em;
+  cursor: pointer;
+  
+}
+
+
+.categories {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+ 
+  padding: 0;
+  gap: .2em;
+}
+
+.categorist__btn-list {
+  list-style: none;
+  border: 1px solid var(--clr-orange);
+  padding: .5em 1em;
+  border-radius: .3em;
+  font-size: var(--size-xs);
+  color: var(--clr-orange);
+}
+
+.categorist__btn-list-active {
+  list-style: none;
+  border: 1px solid var(--clr-orange);
+  padding: .5em 1em;
+  background-color: var(--clr-orange);
+  border-radius: .3em;
+  font-size: var(--size-xs);
+  color: var(--clr-light);
+}
+
+.categorist__btn-list:hover{
+  background-color: rgba(255, 153, 0, 0.192);
+}
+
+.cat__icon {
+  font-size: 4em;
+  color: white;
+}
+
+
+/* xs */
+ @media (min-width: 475px) {
+
+
+ 
+ } 
+
+/* sm */
+/* @media (min-width: 640px) {} */
+
+/* md */
+ @media (min-width: 768px) {
+  .categories {
+   
+    justify-content: left;
+  
+  }
+ } 
+
+/* lg */
+/* @media (min-width: 1024px) {} */
+
+/* xl */
+/* @media (min-width: 1280px) {} */
+
+/* 2xl */
+/* @media (min-width: 1536px) {} */
